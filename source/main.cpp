@@ -4073,7 +4073,7 @@ Num *call_calc()
 int main(int argc, char *argv[])
 {
     ios::sync_with_stdio(0);
-    std::cout << "hello" << std::endl;
+    // std::cout << "hello" << std::endl;
     for (int file_num=1; file_num<=argc; ++file_num) {
         if (freopen(argv[file_num], "r", stdin)==NULL) {
            // throw NOFile();
