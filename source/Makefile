@@ -1,7 +1,7 @@
 .PHONY: all
 all: main
 main: main.o Longint.o Exception.o
-	g++ -std=c++11 -o main main.o Longint.o Exception.o
+	g++ -std=c++11 -Ofast -flto -o main main.o Longint.o Exception.o
 main.o: main.cpp 
 	g++ -std=c++11 -c main.cpp -lstdc++ -lm -o main.o
 Longint.o: Longint.cpp
